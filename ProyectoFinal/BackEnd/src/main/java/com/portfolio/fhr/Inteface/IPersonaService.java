@@ -8,7 +8,7 @@ public interface IPersonaService {
     
     public void savePersona (Persona persona);
     
-    public void deletePersona (Long Id);
+    public void deletePersona (Long id);
     
-    public Persona findPersona (Long Id);
+    public Persona findPersona (Long id);
 }
