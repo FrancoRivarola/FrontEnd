@@ -7,6 +7,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root',
 })
 export class PersonaService {
+  //URL = 'http://localhost:4200/';
   URL = 'https://argprobe.herokuapp.com/personas/';
 
   constructor(private http: HttpClient) {}
