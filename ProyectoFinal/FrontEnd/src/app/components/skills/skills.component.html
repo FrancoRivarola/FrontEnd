@@ -1,4 +1,5 @@
 <div class="row">
+  <div class="header"></div>
   <h1 class="titulo" id="skills">Hard & Soft Skills</h1>
   <div class="col-lg-2">
     <button type="button" routerLink="/newskills" class="btn btn-primary" *ngIf="isLogged">Nuevo Skill</button>
@@ -6,8 +7,8 @@
   <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let Skills of skill">
     <circle-progress [percent]="(Skills.porcentaje)" [radius]="70" [title]="(Skills.porcentaje) + '%' "
       [titleFontSize]="'25'" [titleColor]="'azure'" [imageHeight]="80" [imageWidth]="80" [showImage]="false"
-      [showUnits]="false" [showSubtitle]="false" [outerStrokeWidth]="15" [innerStrokeWidth]="4"
-      [outerStrokeColor]="'red'" [innerStrokeColor]="'blue'" [animation]="true" [animationDuration]="1000">
+      [showUnits]="false" [showSubtitle]="false" [outerStrokeWidth]="10" [innerStrokeWidth]="4"
+      [outerStrokeColor]="'green'" [innerStrokeColor]="'blue'" [animation]="true" [animationDuration]="1000">
     </circle-progress>
     <h3>{{Skills.nombre}}</h3>
     <div>

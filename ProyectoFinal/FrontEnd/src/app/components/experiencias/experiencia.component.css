@@ -13,3 +13,12 @@ h3 {
   font-size: medium;
   display: block;
 }
+.header {
+  background: url(../../../assets/Developer.png) no-repeat top center fixed;
+  background-size: cover;
+  background-color: rgb(10, 19, 24);
+  margin: 0;
+  padding: 0%;
+  height: 400px;
+  color: azure;
+}

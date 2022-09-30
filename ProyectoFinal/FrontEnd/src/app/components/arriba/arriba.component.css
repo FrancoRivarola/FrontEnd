@@ -1,9 +1,11 @@
-.container {
+.row {
   background-color: rgb(10, 19, 24);
+  display: flex;
 }
-.arriba {
+img {
   display: block;
+  height: 50px;
   position: fixed;
-  top: 400px;
-  margin-left: 5rem;
+  bottom: 0;
+  right: 1rem;
 }

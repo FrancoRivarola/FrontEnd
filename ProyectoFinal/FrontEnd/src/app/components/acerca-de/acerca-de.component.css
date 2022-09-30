@@ -22,7 +22,6 @@ body {
   padding: 0%;
   height: 400px;
   color: azure;
-  margin-top: 88.16px;
 }
 
 .content {
@@ -34,12 +33,13 @@ body {
   color: azure;
   text-align: center;
 }
-/* etiqueta welcomw */
+/* etiqueta welcome */
 .welcome {
-  top: 100px;
+  top: 0;
   font-weight: bold;
   font-size: 25px;
   text-align: center;
+  position: sticky;
 }
 /*.titulo-dev {
   position: sticky;
