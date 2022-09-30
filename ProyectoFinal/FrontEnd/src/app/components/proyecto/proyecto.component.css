@@ -2,10 +2,19 @@ div {
   background-color: rgb(10, 19, 24);
   color: azure;
   text-align: center;
-}
-h1 {
-  text-align: left;
+  margin: 0;
 }
 .titulo {
   text-align: center;
 }
+h2,
+h3 {
+  color: azure;
+  font-size: medium;
+  display: block;
+}
+
+/* .fade.show {
+  opacity: 1;
+  background-color: transparent;
+} */

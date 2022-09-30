@@ -1,0 +1,20 @@
+<!-- Example split danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-primary" (click)="login()" *ngIf="!isLogged">Login</button>
+  <button type="button" class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
+  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+    aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark">
+    <li><a class="dropdown-item" (click)="toAcerca()" routerLink="/acerca">Acerca de
+        mi</a>
+    </li>
+    <li><a class="dropdown-item" (click)="toEdu()" routerLink="/educacion">Educacion</a></li>
+    <li><a class="dropdown-item" (click)="toExp()" routerLink="/experiencia">Experiencias Laborales</a></li>
+    <li><a class="dropdown-item" (click)="toSkills()" routerLink="/skills">Hard & Soft Skills</a></li>
+    <li><a class="dropdown-item" (click)="toProyecto()" routerLink="/proyecto">Mis Proyectos</a></li>
+  </ul>
+  <!-- <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+  <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button> -->
+</div>

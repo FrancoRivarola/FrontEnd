@@ -1,5 +1,5 @@
 <div class="row">
-  <h1 class="titulo">Educacion</h1>
+  <h1 class="titulo" id="educacion">Educacion</h1>
   <div class="col-lg-2">
     <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
       Agregar Educacion
@@ -14,15 +14,13 @@
           <td>
             <h2>{{Educacion.nombreE}}</h2>
           </td>
-          <td>{{Educacion.descripcionE}}</td>
-          <td *ngIf="isLogged">
-            <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-          <td><i class="bi bi-pencil"></i>EDITAR</td>
+          <td>
+            <h3>{{Educacion.descripcionE}}</h3>
+            <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged">
+          <td><i class="bi bi-pencil"></i></td>
           </button>
-          </td>
-          <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(Educacion.id)">
-          <td><i class="bi bi-eraser"></i>BORRAR</td>
+          <button class="btn btn-danger" (click)="delete(Educacion.id)" *ngIf="isLogged">
+            <td><i class="bi bi-eraser"></i></td>
           </button>
           </td>
         </tr>

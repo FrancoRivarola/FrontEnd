@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
-import { BannerComponent } from './banner/banner.component';
+import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencias/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HComponent } from './components/skills/h.component';
+import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,7 +22,12 @@ import { NuevaExperienciaComponent } from './components/experiencias/nueva-exper
 import { EditExperienciaComponent } from './components/experiencias/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
-
+import { EditSkillsComponent } from './components/skills/edit-skills.component';
+import { NewSkillsComponent } from './components/skills/new-skills.component';
+import { NuevoProyectoComponent } from './components/proyecto/nuevo-proyecto.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
+import { LinksComponent } from './components/links/links.component';
+import { ArribaComponent } from './components/arriba/arriba.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +37,7 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HComponent,
+    SkillsComponent,
     ProyectoComponent,
     FooterComponent,
     HomeComponent,
@@ -41,6 +46,12 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     EditExperienciaComponent,
     NeweducacionComponent,
     EditEducacionComponent,
+    EditSkillsComponent,
+    NewSkillsComponent,
+    NuevoProyectoComponent,
+    EditProyectoComponent,
+    LinksComponent,
+    ArribaComponent,
   ],
   imports: [
     BrowserModule,

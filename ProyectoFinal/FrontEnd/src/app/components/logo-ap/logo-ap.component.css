@@ -1,31 +1,25 @@
-.container {
+/* .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-#logoAP {
-  width: 150px;
-}
-img {
-  width: 50px;
-}
-.btn {
-  border-width: medium;
-}
+} */
+/* #logoAP {
+  width: 100px;
+  display: inline;
+} */
+
 .redes img {
+  width: 35px;
   margin: 0.2em;
+  display: inline;
 }
+
 /* Para la vista de celular */
 @media (max-width: 575px) {
-  .container {
-    flex-direction: column;
-  }
-  .redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .redes img {
-    margin: 0.2em;
+    margin: 0.1em;
+    width: 30px;
+  }
+  #logoAP {
+    width: 80px;
   }
 }

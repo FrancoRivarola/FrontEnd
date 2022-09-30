@@ -1,0 +1,10 @@
+img {
+  background-color: rgb(10, 19, 24);
+  background-attachment: fixed;
+}
+@media (max-width: 575px) {
+  .row {
+    display: flex;
+    height: 500px;
+  }
+}

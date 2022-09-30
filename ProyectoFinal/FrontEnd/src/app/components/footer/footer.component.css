@@ -1,7 +1,8 @@
 .row {
   background-color: rgb(10, 19, 24);
+  margin: 0;
 }
-footer{
+footer {
   color: aliceblue;
   font-size: 14px;
   display: flex;
