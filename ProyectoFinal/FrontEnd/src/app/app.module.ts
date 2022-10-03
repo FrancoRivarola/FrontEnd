@@ -28,6 +28,8 @@ import { NuevoProyectoComponent } from './components/proyecto/nuevo-proyecto.com
 import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 import { LinksComponent } from './components/links/links.component';
 import { ArribaComponent } from './components/arriba/arriba.component';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
+import { NewAcercaDeComponent } from './components/acerca-de/new-acerca-de.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +54,8 @@ import { ArribaComponent } from './components/arriba/arriba.component';
     EditProyectoComponent,
     LinksComponent,
     ArribaComponent,
+    EditAcercaDeComponent,
+    NewAcercaDeComponent,
   ],
   imports: [
     BrowserModule,

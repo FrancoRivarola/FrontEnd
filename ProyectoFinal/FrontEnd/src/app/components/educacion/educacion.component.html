@@ -3,14 +3,13 @@
 
   </div>
   <h1 class="titulo" id="educacion">Educacion</h1>
-  <div class="col-lg-2">
+  <div>
     <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
       Agregar Educacion
     </button>
   </div>
 
-  <div class="col-lg-1"></div>
-  <div class="col-lg-11">
+  <div>
     <table class="table">
       <tbody>
         <tr *ngFor="let Educacion of educacion">

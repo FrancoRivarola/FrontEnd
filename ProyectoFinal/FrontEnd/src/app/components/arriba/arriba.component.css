@@ -1,11 +1,9 @@
 .row {
   background-color: rgb(10, 19, 24);
-  display: flex;
 }
 img {
-  display: block;
   height: 50px;
   position: fixed;
   bottom: 0;
-  right: 1rem;
+  right: 0;
 }

@@ -10,24 +10,38 @@ div {
   margin: 0;
 }
 
-#logoAP {
-  width: 100px;
+#logoAP,
+#logointi {
+  width: 90px;
+  display: inline;
+}
+#logocessi {
+  width: 75px;
   display: inline;
 }
 
-.header {
-  display: block;
-}
 .nombre {
   display: inline;
   font-size: 18px;
   font-weight: bold;
-  margin-left: 1rem;
   color: azure;
 }
 .titulo-dev {
   display: inline;
   font-size: 16px;
-  margin-left: 1rem;
   color: azure;
+  padding-left: 1rem;
+}
+.persona {
+  display: inline;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .persona {
+    display: block;
+  }
+  .titulo-dev {
+    padding-left: 1rem;
+  }
 }
