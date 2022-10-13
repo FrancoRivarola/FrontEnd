@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/redes/logo-ap.component';
-import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencias/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
@@ -30,12 +29,16 @@ import { LinksComponent } from './components/links/links.component';
 import { ArribaComponent } from './components/arriba/arriba.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 import { NewAcercaDeComponent } from './components/acerca-de/new-acerca-de.component';
+import { EditLinksComponent } from './components/links/edit-links.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { EditHeaderComponent } from './components/header/edit-header.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogoAPComponent,
-    BannerComponent,
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
@@ -56,6 +59,8 @@ import { NewAcercaDeComponent } from './components/acerca-de/new-acerca-de.compo
     ArribaComponent,
     EditAcercaDeComponent,
     NewAcercaDeComponent,
+    EditLinksComponent,
+    EditHeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +70,8 @@ import { NewAcercaDeComponent } from './components/acerca-de/new-acerca-de.compo
     FormsModule,
     HttpClientModule,
     FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
   providers: [interceptorProvider],
   bootstrap: [AppComponent],

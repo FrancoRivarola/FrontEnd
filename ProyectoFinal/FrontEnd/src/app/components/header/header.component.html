@@ -15,6 +15,9 @@
   </div>
   <div class="persona">
     <p class="nombre">{{persona.nombre}} {{persona.apellido}}:</p>
-    <p class="titulo-dev">Full Stack Developer Jr.</p>
+    <p class="titulo-dev">{{persona.titulo}}</p>
+    <button type="button" class="btn btn-primary" routerLink="/editnombre/1" *ngIf="isLogged">
+      <td><i class="bi bi-pencil"></i></td>
+    </button>
   </div>
 </div>

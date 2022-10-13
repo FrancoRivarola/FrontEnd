@@ -12,6 +12,9 @@ import { NuevoProyectoComponent } from './components/proyecto/nuevo-proyecto.com
 import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 import { NewAcercaDeComponent } from './components/acerca-de/new-acerca-de.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
+import { LinksComponent } from './components/links/links.component';
+import { EditLinksComponent } from './components/links/edit-links.component';
+import { EditHeaderComponent } from './components/header/edit-header.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,8 +27,10 @@ const routes: Routes = [
   { path: 'editskills/:id', component: EditSkillsComponent },
   { path: 'nuevopro', component: NuevoProyectoComponent },
   { path: 'editpro/:id', component: EditProyectoComponent },
-  { path: 'descripcion', component: NewAcercaDeComponent},
-  { path: 'editdes/:id', component: EditAcercaDeComponent}
+  { path: 'descripcion', component: NewAcercaDeComponent },
+  { path: 'editdes/:id', component: EditAcercaDeComponent },
+  { path: 'nuevaimg/:id', component: EditLinksComponent },
+  { path: 'editnombre/:id', component: EditHeaderComponent },
 ];
 
 @NgModule({

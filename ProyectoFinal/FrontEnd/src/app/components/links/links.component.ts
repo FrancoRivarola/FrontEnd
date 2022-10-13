@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -8,11 +10,17 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./links.component.css'],
 })
 export class LinksComponent implements OnInit {
+  persona: persona = new persona('', '', '', '');
   isLogged = false;
 
-  constructor(private router: Router, private tokenService: TokenService) {}
+  constructor(
+    public personaService: PersonaService,
+    private router: Router,
+    private tokenService: TokenService
+  ) {}
 
   ngOnInit(): void {
+    this.cargarPersona();
     if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
@@ -22,6 +30,12 @@ export class LinksComponent implements OnInit {
   onLogOut(): void {
     this.tokenService.logOut();
     window.location.reload();
+  }
+
+  cargarPersona() {
+    this.personaService.detail(1).subscribe((data) => {
+      this.persona = data;
+    });
   }
 
   login() {
@@ -46,7 +60,11 @@ export class LinksComponent implements OnInit {
     document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
   }
 
-  toProyecto(){
+  toProyecto() {
     document.getElementById('proyecto').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toFooter() {
+    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
   }
 }

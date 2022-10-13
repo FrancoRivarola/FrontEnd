@@ -6,7 +6,12 @@
   <ul class="dropdown-menu dropdown-menu-dark">
     <!-- Dropdown menu links -->
     <li class="img-container">
-      <img class="img" src="../../../assets/IMG_20220803_205317006_BURST000_COVER_AI.jpg">
+      <div>
+        <button type="button" class="btn btn-primary" routerLink="/nuevaimg/1" *ngIf="isLogged">
+          Cambiar Imagen
+        </button>
+      </div>
+      <img class="img-fluid" src={{persona.img}} id="fotodeperfil">
     </li>
     <li><a class="dropdown-item" (click)="toAcerca()" routerLink="/acerca">Acerca de mi</a>
     </li>
@@ -14,26 +19,8 @@
     <li><a class="dropdown-item" (click)="toExp()" routerLink="/experiencia">Experiencias Laborales</a></li>
     <li><a class="dropdown-item" (click)="toSkills()" routerLink="/skills">Hard & Soft Skills</a></li>
     <li><a class="dropdown-item" (click)="toProyecto()" routerLink="/proyecto">Mis Proyectos</a></li>
+    <li><a class="dropdown-item" (click)="toFooter()" routerLink="/footer">Mis redes sociales</a></li>
     <button type="button" class="btn btn-primary" (click)="login()" *ngIf="!isLogged">Login</button>
     <button type="button" class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
   </ul>
 </div>
-
-<!-- Example split danger button -->
-<!-- <div class="btn-group dropstart">
-  <button type="button" class="btn btn-primary" (click)="login()" *ngIf="!isLogged">Login</button>
-  <button type="button" class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
-  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
-    aria-expanded="false">
-    <span class="visually-hidden">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu dropstart-menu-dark">
-    <li><a class="dropdown-item" (click)="toAcerca()" routerLink="/acerca">Acerca de mi</a>
-    </li>
-    <li><a class="dropdown-item" (click)="toEdu()" routerLink="/educacion">Educacion</a></li>
-    <li><a class="dropdown-item" (click)="toExp()" routerLink="/experiencia">Experiencias Laborales</a></li>
-    <li><a class="dropdown-item" (click)="toSkills()" routerLink="/skills">Hard & Soft Skills</a></li>
-    <li><a class="dropdown-item" (click)="toProyecto()" routerLink="/proyecto">Mis Proyectos</a></li>
-  </ul> -->
-<!-- <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
-  <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button> -->
