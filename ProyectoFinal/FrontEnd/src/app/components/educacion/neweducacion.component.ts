@@ -21,11 +21,11 @@ export class NeweducacionComponent implements OnInit {
     this.educacionS.save(educacion).subscribe({
       next: (data) => {
         alert('Educacion agregada correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#educacion');
       },
       error: (err) => {
         alert('Fallo la carga');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#educacion');
       },
     });
   }

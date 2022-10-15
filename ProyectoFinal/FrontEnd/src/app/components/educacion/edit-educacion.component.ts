@@ -24,8 +24,8 @@ export class EditEducacionComponent implements OnInit {
         this.educacion = data;
       },
       error: (err) => {
-        alert('Error al modificar experiencia');
-        this.router.navigate(['']);
+        alert('Error al cargar datos');
+        location.replace('https://francorivarola.tech/#educacion');
       },
     });
   }
@@ -35,11 +35,11 @@ export class EditEducacionComponent implements OnInit {
     this.educacionS.update(id, this.educacion).subscribe({
       next: (data) => {
         alert('Educacion editada correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#educacion');
       },
       error: (err) => {
         alert('Error al modificar experiencia');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#educacion');
       },
     });
   }

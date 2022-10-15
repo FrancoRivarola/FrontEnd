@@ -13,13 +13,13 @@
       </div>
       <img class="img-fluid" src={{persona.img}} id="fotodeperfil">
     </li>
-    <li><a class="dropdown-item" (click)="toAcerca()" routerLink="/acerca">Acerca de mi</a>
+    <li><a class="dropdown-item" (click)="toAcerca()" routerLink="">Acerca de mi</a>
     </li>
-    <li><a class="dropdown-item" (click)="toEdu()" routerLink="/educacion">Educacion</a></li>
-    <li><a class="dropdown-item" (click)="toExp()" routerLink="/experiencia">Experiencias Laborales</a></li>
-    <li><a class="dropdown-item" (click)="toSkills()" routerLink="/skills">Hard & Soft Skills</a></li>
-    <li><a class="dropdown-item" (click)="toProyecto()" routerLink="/proyecto">Mis Proyectos</a></li>
-    <li><a class="dropdown-item" (click)="toFooter()" routerLink="/footer">Mis redes sociales</a></li>
+    <li><a class="dropdown-item" (click)="toEdu()" routerLink="">Educacion</a></li>
+    <li><a class="dropdown-item" (click)="toExp()" routerLink="">Experiencias Laborales</a></li>
+    <li><a class="dropdown-item" (click)="toSkills()" routerLink="">Hard & Soft Skills</a></li>
+    <li><a class="dropdown-item" (click)="toProyecto()" routerLink="">Mis Proyectos</a></li>
+    <li><a class="dropdown-item" (click)="toFooter()" routerLink="">Mis redes sociales</a></li>
     <button type="button" class="btn btn-primary" (click)="login()" *ngIf="!isLogged">Login</button>
     <button type="button" class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
   </ul>

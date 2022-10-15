@@ -21,11 +21,11 @@ export class NewSkillsComponent implements OnInit {
     this.Sskills.save(skill).subscribe({
       next: (data) => {
         alert('Skill creada correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#skills');
       },
       error: (err) => {
         alert('Fallo al agregar Skill');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#skills');
       },
     });
   }

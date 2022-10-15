@@ -20,11 +20,11 @@ export class NuevoProyectoComponent implements OnInit {
     this.sProyecto.save(proyecto).subscribe({
       next: (data) => {
         alert('Proyecto agregado');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#proyecto');
       },
       error: (err) => {
         alert('Fallo la carga');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#proyecto');
       },
     });
   }

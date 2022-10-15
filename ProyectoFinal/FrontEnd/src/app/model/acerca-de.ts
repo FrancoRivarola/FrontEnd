@@ -1,5 +1,5 @@
 export class AcercaDe {
-  id?: number;
+  id: number;
   descripcion: string;
   constructor(descripcion: string) {
     this.descripcion = descripcion;

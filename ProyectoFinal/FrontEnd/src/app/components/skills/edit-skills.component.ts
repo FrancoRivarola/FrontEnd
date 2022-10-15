@@ -25,7 +25,7 @@ export class EditSkillsComponent implements OnInit {
       },
       error: (err) => {
         alert('Error al modificar');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#skills');
       },
     });
   }
@@ -35,11 +35,11 @@ export class EditSkillsComponent implements OnInit {
     this.skill.update(id, this.skills).subscribe({
       next: (data) => {
         alert('Skill editado correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#skills');
       },
       error: (err) => {
         alert('Error al modificar el skill');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#skills');
       },
     });
   }

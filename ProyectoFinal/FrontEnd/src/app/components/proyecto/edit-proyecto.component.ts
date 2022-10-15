@@ -25,7 +25,7 @@ export class EditProyectoComponent implements OnInit {
       },
       error: (err) => {
         alert('Error al modificar proyecto');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#proyecto');
       },
     });
   }
@@ -35,11 +35,11 @@ export class EditProyectoComponent implements OnInit {
     this.sProyecto.update(id, this.proyecto).subscribe({
       next: (data) => {
         alert('Proyecto editado correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#proyecto');
       },
       error: (err) => {
         alert('Error al modificar proyecto');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#proyecto');
       },
     });
   }

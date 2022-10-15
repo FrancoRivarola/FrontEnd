@@ -24,11 +24,11 @@ export class NuevaExperienciaComponent implements OnInit {
     this.sExperiencia.save(expe).subscribe({
       next: (data) => {
         alert('Experiencia agregada');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#experiencia');
       },
       error: (err) => {
         alert('Fallo la carga');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#experiencia');
       },
     });
   }

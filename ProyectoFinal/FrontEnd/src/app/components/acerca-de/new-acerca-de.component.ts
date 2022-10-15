@@ -20,11 +20,11 @@ export class NewAcercaDeComponent implements OnInit {
     this.acercadeS.save(acercaDe).subscribe({
       next: (data) => {
         alert('Descripcion agregada correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#acerca');
       },
       error: (err) => {
         alert('Fallo la carga');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#acerca');
       },
     });
   }

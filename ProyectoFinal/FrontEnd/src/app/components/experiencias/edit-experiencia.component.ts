@@ -25,7 +25,7 @@ export class EditExperienciaComponent implements OnInit {
       },
       error: (err) => {
         alert('Error al modificar experiencia');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#experiencia');
       },
     });
   }
@@ -35,11 +35,11 @@ export class EditExperienciaComponent implements OnInit {
     this.sExperiencia.update(id, this.expLab).subscribe({
       next: (data) => {
         alert('Experiencia editada correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#experiencia');
       },
       error: (err) => {
         alert('Error al modificar experiencia');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#experiencia');
       },
     });
   }

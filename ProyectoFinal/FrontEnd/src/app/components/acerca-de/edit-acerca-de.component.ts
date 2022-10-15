@@ -10,6 +10,7 @@ import { AcercaDeService } from 'src/app/service/acerca-de.service';
 })
 export class EditAcercaDeComponent implements OnInit {
   acercaDe: AcercaDe = null;
+
   constructor(
     private acercaDeS: AcercaDeService,
     private activatedRouter: ActivatedRoute,
@@ -23,8 +24,8 @@ export class EditAcercaDeComponent implements OnInit {
         this.acercaDe = data;
       },
       error: (err) => {
-        alert('Error al modificar descripcion');
-        this.router.navigate(['']);
+        alert('Error al cargar informacion');
+        location.replace('https://francorivarola.tech/#acerca');
       },
     });
   }
@@ -33,11 +34,11 @@ export class EditAcercaDeComponent implements OnInit {
     this.acercaDeS.update(id, this.acercaDe).subscribe({
       next: (data) => {
         alert('Descripcion editada correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#acerca');
       },
       error: (err) => {
         alert('Error al modificar descripcion');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#acerca');
       },
     });
   }

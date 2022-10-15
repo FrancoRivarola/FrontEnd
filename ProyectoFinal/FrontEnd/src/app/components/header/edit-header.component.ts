@@ -10,6 +10,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class EditHeaderComponent implements OnInit {
   persona: persona = new persona('', '', '', '');
+
   constructor(
     private activatedRouter: ActivatedRoute,
     private personaServise: PersonaService,
@@ -24,7 +25,7 @@ export class EditHeaderComponent implements OnInit {
       },
       error: (err) => {
         alert('Error al modificar experiencia');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#header');
       },
     });
   }
@@ -34,11 +35,11 @@ export class EditHeaderComponent implements OnInit {
     this.personaServise.update(id, this.persona).subscribe({
       next: (data) => {
         alert('Editado correctamente');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#header');
       },
       error: (err) => {
         alert('Error al modificar');
-        this.router.navigate(['']);
+        location.replace('https://francorivarola.tech/#header');
       },
     });
   }
